@@ -10,5 +10,5 @@ async def root():
 
 
 @app.get("/sum/")
-def calculate_sum(a: int, b: int):
+async def calculate_sum(a: int, b: int):
     return {"result": a + b}
