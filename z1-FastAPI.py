@@ -37,3 +37,11 @@ async def ingest_metric(metric: MetricIn):
         "status": "created",
         "event_id": metric.event_id
     }
+
+"""
+уникальный индекс в PostgreSQL по event_id;
+INSERT ... ON CONFLICT DO NOTHING/UPDATE;
+correlation id;
+batch ingestion;
+асинхронную отправку в Kafka/очередь.
+"""
