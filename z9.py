@@ -1,3 +1,7 @@
+# Есть поток событий:
+# {"agent_id":"a1","model":"gpt-x","tokens":1000,"cost_usd":0.02,"ts":"2026-03-24T10:00:00"}
+# Нужно посчитать суммарную стоимость по агенту за день.
+
 from collections import defaultdict
 from datetime import datetime
 
@@ -20,3 +24,9 @@ result = [
 ]
 
 print(result)
+
+# дедупликация;
+# контроль late-arriving data;
+# schema evolution;
+# backfill;
+# monitoring качества данных.
