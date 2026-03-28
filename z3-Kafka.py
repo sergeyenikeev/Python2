@@ -29,3 +29,10 @@ for msg in consumer:
     except Exception as e:
         print(f"processing failed: {e}")
 
+"""
+commit offset после успешной обработки;
+обработка должна быть идемпотентной;
+ошибки отправлять в retry/DLQ;
+следить за consumer lag;
+учитывать rebalance.
+"""

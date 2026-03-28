@@ -47,7 +47,7 @@ def update_user(user_id, new_name, new_age):
     print(f"Пользователь с id={user_id} обновлен.")
 
 
-# D - Delete
+# D - Deleteгм
 def delete_user(user_id):
     cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
     conn.commit()
