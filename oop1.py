@@ -1,4 +1,5 @@
 class Point:
+    """Класс для представления точек на плоскости"""
     color = 'red'
     circle = 2
 
@@ -47,3 +48,15 @@ print(hasattr(Point, 'prop'))
 delattr(Point, 'prop')
 print(hasattr(Point, 'prop'))
 print(Point.__dict__)
+print(hasattr(a, 'prop'))
+print(hasattr(b, 'prop'))
+print(hasattr(a, 'type_pt'))
+print(hasattr(b, 'type_pt'))
+print(hasattr(a, 'circle'))
+print(hasattr(b, 'circle'))
+a.x = 10
+b.x = 20
+print(a.__dict__)
+print(b.__dict__)
+print(Point.__dict__)
+print(a.__doc__)
