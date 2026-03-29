@@ -6,9 +6,27 @@ from collections import defaultdict
 from datetime import datetime
 
 events = [
-    {"agent_id": "a1", "model": "gpt-x", "tokens": 1000, "cost_usd": 0.02, "ts": "2026-03-24T10:00:00"},
-    {"agent_id": "a1", "model": "gpt-x", "tokens": 500, "cost_usd": 0.01, "ts": "2026-03-24T12:00:00"},
-    {"agent_id": "a2", "model": "gpt-y", "tokens": 800, "cost_usd": 0.03, "ts": "2026-03-24T13:00:00"},
+    {
+        "agent_id": "a1",
+        "model": "gpt-x",
+        "tokens": 1000,
+        "cost_usd": 0.02,
+        "ts": "2026-03-24T10:00:00",
+    },
+    {
+        "agent_id": "a1",
+        "model": "gpt-x",
+        "tokens": 500,
+        "cost_usd": 0.01,
+        "ts": "2026-03-24T12:00:00",
+    },
+    {
+        "agent_id": "a2",
+        "model": "gpt-y",
+        "tokens": 800,
+        "cost_usd": 0.03,
+        "ts": "2026-03-24T13:00:00",
+    },
 ]
 
 agg = defaultdict(float)
