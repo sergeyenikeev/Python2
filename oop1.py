@@ -2,6 +2,13 @@ class Point:
     """Класс для представления точек на плоскости"""
     color = 'red'
     circle = 2
+    def set_coords(self, x, y):
+        self.x = x
+        self.y = y
+        print('Метод set_coords' + str(self))
+    def get_coords(self):
+        return self.x, self.y   
+    
 
 print(Point)
 
@@ -60,3 +67,16 @@ print(a.__dict__)
 print(b.__dict__)
 print(Point.__dict__)
 print(a.__doc__)
+
+pt = Point()
+pt.set_coords(1, 2)
+print(pt.__dict__)
+
+pt2 = Point()
+pt2.set_coords(3, 4)
+
+print(pt.__dict__)
+print(pt2.__dict__)
+print(Point.__dict__)
+res = getattr(pt, 'get_coords')
+print(res())
