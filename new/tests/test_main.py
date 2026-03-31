@@ -1,4 +1,5 @@
 import pytest
+import conftest
 
 @pytest.mark.parametrize("a,b,expected", [
     (1, 1, 2),
@@ -10,3 +11,6 @@ import pytest
 ])
 def test_add(a, b, expected):
     assert a + b == expected
+
+def test_error(data_test):
+    assert data_test() > 11

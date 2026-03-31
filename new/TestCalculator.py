@@ -21,3 +21,6 @@ from calc import Calculator
 
 def test_add():
     assert 11 == 11
+
+def test_add2():
+    assert 12 == 11
