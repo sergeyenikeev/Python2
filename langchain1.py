@@ -24,6 +24,7 @@ prompt = ChatPromptTemplate.from_messages([
 # 4) Цепочка: prompt -> model -> text
 chain = prompt | llm | StrOutputParser()
 
+
 # 5) Вызов
 result = chain.invoke({"topic": "что такое декоратор в Python"})
 

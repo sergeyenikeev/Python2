@@ -1,5 +1,4 @@
 try:
-    x = int("abc")
+    a = int("abc")
 except ValueError as e:
-    print(f"Ошибка ValueError occurred: {e}")
-    
+    print(f"Error: {e}")
